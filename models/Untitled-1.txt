@@ -1,1 +1,0 @@
-pscp -i C:\Users\MITS\Downloads\arikya-key.ppk -r C:\Users\MITS\Documents\arikyafrontendevops\dist\* ubuntu@43.204.103.66:/var/www/frontend/dist
