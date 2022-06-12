@@ -1,0 +1,32 @@
+const express = require("express")
+var router = express.Router()
+
+const Mail = require("../controllers/placementStatus")
+
+router.post("/updateplaced", Mail.updateplaced)
+router.post("/singlestudent", Mail.singlestudent)
+router.post("/sendmail", Mail.sendmail)
+router.post("/eligible", Mail.eligible)
+router.post("/checktoken", Mail.checktoken)
+router.post("/updateregisteredmulti", Mail.updateregisteredmulti)
+router.post("/updateregisteredcompany", Mail.updateregisteredcompany)
+router.post("/checkregistered", Mail.checkregistered)
+router.post("/checkmailnumber", Mail.checkmailnumber)
+router.post("/checkrollnumber", Mail.checkrollnumber)
+router.post("/addstu", Mail.addstu)
+router.post("/removestu", Mail.removestu)
+router.post("/applicants", Mail.applicants)
+router.post("/dashboard", Mail.dashboard)
+router.post("/updateofferletter", Mail.updateofferletter)
+router.post("/notifyacceptreject", Mail.notifyacceptreject)
+router.post("/adminplaced", Mail.adminplaced)
+router.post("/homequery", Mail.homequery)
+router.post("/getHiring", Mail.getHiring)
+router.post('/singlemultipleoffers', Mail.singlemultipleoffers)
+router.post('/submitcompanystatus', Mail.submitcompanystatus)
+router.post('/verifyOtp', Mail.verifyOtp)
+router.post('/addIntoLevel', Mail.addIntoLevel)
+router.post('/removeIntoLevel', Mail.removeIntoLevel)
+
+
+module.exports = router
